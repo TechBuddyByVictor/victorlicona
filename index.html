@@ -4,56 +4,307 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Victor Licona</title>
-  <meta name="description" content="Victor Licona — Builder, Tech, Media, Business." />
+  <meta name="description" content="Victor Licona — Tech, media, and business. Based in Fort Worth, TX." />
+
   <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    :root{
+      --bg: #0b0d10;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.04);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.68);
+      --line: rgba(255,255,255,.12);
+      --shadow: 0 18px 50px rgba(0,0,0,.55);
     }
-    .container {
-      max-width: 700px;
-      padding: 24px;
-      text-align: center;
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+      background:
+        radial-gradient(1200px 700px at 20% 10%, rgba(255,255,255,.10), transparent 55%),
+        radial-gradient(900px 600px at 85% 25%, rgba(255,255,255,.08), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.5;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+
+    a{color:inherit}
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 42px 18px 70px;
     }
-    p {
-      color: #b3b3b3;
-      line-height: 1.6;
+
+    header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 16px;
+      padding: 18px 18px 22px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--card), var(--card2));
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
     }
-    a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      border: 1px solid #333;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
+
+    .name{
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
     }
-    a:hover {
-      background: white;
-      color: black;
+
+    h1{
+      margin:0;
+      font-size: 38px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle{
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .badge-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 10px;
+    }
+    .badge{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: rgba(255,255,255,.78);
+    }
+
+    .cta{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      min-width: 220px;
+      align-items:stretch;
+    }
+    .btn{
+      text-decoration:none;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.07);
+      padding: 12px 14px;
+      border-radius: 12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      font-weight: 600;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.12);
+      border-color: rgba(255,255,255,.22);
+    }
+    .btn.primary{
+      background: rgba(255,255,255,.92);
+      color: #0b0d10;
+      border-color: transparent;
+    }
+    .btn.primary:hover{
+      background: #ffffff;
+    }
+
+    main{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+    }
+
+    .card{
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--card), var(--card2));
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .card h2{
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+    .muted{color: var(--muted)}
+    .list{
+      margin: 12px 0 0 0;
+      padding: 0;
+      list-style: none;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+    .list li{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      padding: 12px;
+      border-radius: 14px;
+    }
+    .list li strong{
+      display:block;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .list li span{
+      color: rgba(255,255,255,.72);
+      font-size: 14px;
+    }
+
+    .split{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .mini{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      padding: 12px;
+      border-radius: 14px;
+    }
+    .mini .k{
+      font-size: 12px;
+      color: rgba(255,255,255,.68);
+      margin-bottom: 6px;
+    }
+    .mini .v{
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    footer{
+      margin-top: 18px;
+      display:flex;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,.55);
+      font-size: 13px;
+      padding: 0 6px;
+    }
+
+    @media (max-width: 860px){
+      main{grid-template-columns: 1fr}
+      header{flex-direction:column}
+      .cta{width:100%}
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h1>Victor Licona</h1>
-    <p>
-      Builder • Tech • Media • Business<br />
-      Fort Worth, TX
-    </p>
 
-    <a href="mailto:victor@victorlicona.com">Email Me</a>
-    <a href="#">Tech Projects</a>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="name">
+        <h1>Victor Licona</h1>
+        <div class="subtitle">
+          Tech • Media • Business — based in Fort Worth, TX
+        </div>
+
+        <div class="badge-row">
+          <div class="badge">Student</div>
+          <div class="badge">Cybersecurity-focused</div>
+          <div class="badge">Bilingual (EN/ES)</div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@victorlicona.com">Email: contact@victorlicona.com</a>
+        <a class="btn" href="tel:+12142706884">Call: (214) 270-6884</a>
+        <a class="btn" href="sms:+12142706884">Text Me</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>About</h2>
+        <p class="muted" style="margin:0;">
+          I’m Victor — I build and support tech solutions, help with media production, and work on business projects.
+          This site is my hub for what I’m working on and how to reach me.
+        </p>
+
+        <div class="split">
+          <div class="mini">
+            <div class="k">Location</div>
+            <div class="v">Fort Worth, TX</div>
+          </div>
+          <div class="mini">
+            <div class="k">Availability</div>
+            <div class="v">By appointment</div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:16px;">What I’m working on</h2>
+        <ul class="list">
+          <li>
+            <strong>Personal Brand & Portfolio</strong>
+            <span>Projects, experience, and a central place to contact me.</span>
+          </li>
+          <li>
+            <strong>Tech Support & Troubleshooting</strong>
+            <span>Helping people and small teams solve real device, software, and setup problems.</span>
+          </li>
+          <li>
+            <strong>Media / Production</strong>
+            <span>Livestream and church media workflows (cameras, audio, overlays, reliability).</span>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="card">
+        <h2>Contact</h2>
+        <p class="muted" style="margin:0;">
+          Fastest way to reach me is email or text.
+        </p>
+
+        <ul class="list">
+          <li>
+            <strong>Email</strong>
+            <span><a href="mailto:contact@victorlicona.com">contact@victorlicona.com</a></span>
+          </li>
+          <li>
+            <strong>Phone</strong>
+            <span><a href="tel:+12142706884">(214) 270-6884</a></span>
+          </li>
+        </ul>
+
+        <h2 style="margin-top:16px;">Links</h2>
+        <ul class="list">
+          <li>
+            <strong>TechBuddy</strong>
+            <span><a href="#" title="Add your TechBuddy link here">Add link</a></span>
+          </li>
+          <li>
+            <strong>Resume</strong>
+            <span><a href="#" title="Add a Google Drive / PDF link later">Add link</a></span>
+          </li>
+          <li>
+            <strong>Social</strong>
+            <span><a href="#" title="Add Instagram/LinkedIn later">Add link</a></span>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="y"></span> Victor Licona</div>
+      <div class="muted">Built on Vercel</div>
+    </footer>
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
