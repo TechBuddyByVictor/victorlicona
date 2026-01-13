@@ -9,11 +9,8 @@
 </head>
 <body>
   <div class="container">
-    <nav class="nav">
-      <div class="brand">
-        <strong>Victor Licona</strong>
-        <span>Work</span>
-      </div>
+    <nav class="nav fadeIn">
+      <div class="brand"><strong>Victor Licona</strong><span>Work</span></div>
       <div class="links">
         <a href="./index.html">Home</a>
         <a href="./about.html">About</a>
@@ -23,40 +20,38 @@
       </div>
     </nav>
 
-    <section class="hero">
-      <h1 class="h1">What I do</h1>
-      <p class="sub">
-        A complete view of my roles, projects, and the kind of work I’m best at.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Business</h2>
-      <ul class="list">
-        <li class="item">
-          <strong>TechBuddy by Victor — Founder / Owner / Operator (one-person company)</strong>
-          <span>
-            Tech support for seniors, families, and small businesses: device setup, troubleshooting, scams & safety,
-            networks, smart home, and general problem solving. Built to be professional, bilingual, and trustworthy.
-          </span>
-        </li>
-      </ul>
-      <div class="btnrow">
-        <a class="btn" href="#" title="Add your TechBuddy site link if you want">TechBuddy link (optional)</a>
-        <a class="btn green" href="mailto:contact@victorlicona.com">Work with me</a>
+    <section class="hero fadeIn">
+      <div class="heroInner">
+        <div class="spark"></div>
+        <h1 class="h1">Work & roles</h1>
+        <p class="sub">A clear breakdown of what I do across business, work, and community leadership.</p>
       </div>
     </section>
 
-    <div class="grid">
+    <section class="card fadeIn">
+      <h2>Business</h2>
+      <ul class="list">
+        <li class="item">
+          <strong>TechBuddy by Victor — Founder / Owner / Operator</strong>
+          <span>
+            One-person tech support company serving seniors, families, and small businesses. I handle everything:
+            client communication, troubleshooting, setups, and building systems that feel professional and safe.
+          </span>
+        </li>
+      </ul>
+      <div class="btnRow">
+        <a class="btn primary" href="mailto:contact@victorlicona.com">Work with me</a>
+        <a class="btn" href="#" title="Add your TechBuddy site link if you want">TechBuddy link (optional)</a>
+      </div>
+    </section>
+
+    <div class="grid fadeIn">
       <section class="card">
         <h2>Professional</h2>
         <ul class="list">
           <li class="item">
             <strong>Best Buy — Certified Apple Computing Advisor</strong>
-            <span>
-              Apple-focused sales/support experience: customer discovery, recommendations, and helping people get the right setup.
-              Strong emphasis on clarity, confidence, and customer trust.
-            </span>
+            <span>Apple-focused advising + customer solutions. Strong emphasis on clarity, trust, and correct setups.</span>
           </li>
         </ul>
 
@@ -64,54 +59,33 @@
 
         <h2>Community & leadership</h2>
         <ul class="list">
-          <li class="item">
-            <strong>Church media & livestream production</strong>
-            <span>Cameras, audio, overlays, and reliable service execution—making systems stable and repeatable.</span>
-          </li>
-          <li class="item">
-            <strong>Worship leadership</strong>
-            <span>Planning and leading worship in a Spanish-speaking Pentecostal church context.</span>
-          </li>
-          <li class="item">
-            <strong>Church treasurer responsibilities</strong>
-            <span>Helping track finances responsibly and maintain clean systems/tools.</span>
-          </li>
+          <li class="item"><strong>Church media & livestream</strong><span>Cameras, audio, overlays, and reliable service execution.</span></li>
+          <li class="item"><strong>Worship leadership</strong><span>Planning and leading worship in a Spanish-speaking Pentecostal church context.</span></li>
+          <li class="item"><strong>Church treasurer responsibilities</strong><span>Helping manage finances and keep systems clean and accountable.</span></li>
         </ul>
       </section>
 
       <aside class="card">
-        <h2>How I work</h2>
+        <h2>Social</h2>
         <ul class="list">
-          <li class="item">
-            <strong>Strengths</strong>
-            <span>Troubleshooting, system setup, workflow improvement, and making things consistent.</span>
-          </li>
-          <li class="item">
-            <strong>What I value</strong>
-            <span>Reliable results, clean communication, and professional execution.</span>
-          </li>
-          <li class="item">
-            <strong>Social</strong>
-            <span>
-              <a href="#" title="Add your LinkedIn URL here">LinkedIn (placeholder)</a><br/>
-              <a href="#" title="Add your Instagram URL here">Instagram (placeholder)</a>
-            </span>
-          </li>
+          <li class="item"><strong>LinkedIn</strong><span><a href="#" title="Replace with your LinkedIn URL">Placeholder link</a></span></li>
+          <li class="item"><strong>Instagram</strong><span><a href="#" title="Replace with your Instagram URL">Placeholder link</a></span></li>
+        </ul>
+        <hr class="hr"/>
+        <h2>Contact</h2>
+        <ul class="list">
+          <li class="item"><strong>Email</strong><span><a href="mailto:contact@victorlicona.com">contact@victorlicona.com</a></span></li>
+          <li class="item"><strong>Text</strong><span><a href="sms:+12142706884">(214) 270-6884</a></span></li>
         </ul>
       </aside>
     </div>
 
-    <div class="footer">
+    <div class="footer fadeIn">
       <div>© <span id="y"></span> Victor Licona</div>
-      <div class="smalllinks">
-        <a href="./goals.html">Goals</a>
-        <a href="./contact.html">Contact</a>
-      </div>
+      <div class="smalllinks"><a href="./goals.html">Goals</a><a href="./contact.html">Contact</a></div>
     </div>
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
