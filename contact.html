@@ -3,66 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Victor Licona</title>
-  <meta name="description" content="Contact Victor Licona." />
-  <link rel="stylesheet" href="./styles.css">
+  <title>Contact | Victor</title>
+  <link rel="stylesheet" href="Styles.css" />
 </head>
 <body>
-  <div class="container">
-    <nav class="nav fadeIn">
-      <div class="brand"><strong>Victor Licona</strong><span>Contact</span></div>
-      <div class="links">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./work.html">Work</a>
-        <a href="./goals.html">Goals</a>
-        <a class="active" href="./contact.html">Contact</a>
-      </div>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <section class="hero fadeIn">
-      <div class="heroInner">
-        <div class="spark"></div>
-        <h1 class="h1">Contact</h1>
-        <p class="sub">Email or text is the fastest way to reach me.</p>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Victor</span>
+      </a>
 
-        <div class="btnRow">
-          <a class="btn primary" href="mailto:contact@victorlicona.com">Email: contact@victorlicona.com</a>
-          <a class="btn green" href="sms:+12142706884">Text: (214) 270-6884</a>
-          <a class="btn" href="tel:+12142706884">Call</a>
-        </div>
-
-        <div class="tags">
-          <div class="tag">TechBuddy: include device + issue</div>
-          <div class="tag">Collab: include goal + timeline</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="card fadeIn">
-      <h2>Message template (copy/paste)</h2>
-      <ul class="list">
-        <li class="item"><strong>Name</strong><span>…</span></li>
-        <li class="item"><strong>Reason</strong><span>Tech help / collaboration / question</span></li>
-        <li class="item"><strong>Details</strong><span>Device + what’s happening (or the project idea)</span></li>
-        <li class="item"><strong>Timeline</strong><span>When you need it</span></li>
-      </ul>
-
-      <hr class="hr"/>
-
-      <h2>Social</h2>
-      <div class="btnRow">
-        <a class="btn" href="#" title="Replace with your LinkedIn URL">LinkedIn (placeholder)</a>
-        <a class="btn" href="#" title="Replace with your Instagram URL">Instagram (placeholder)</a>
-      </div>
-    </section>
-
-    <div class="footer fadeIn">
-      <div>© <span id="y"></span> Victor Licona</div>
-      <div class="smalllinks"><a href="./index.html">Home</a><a href="./work.html">Work</a></div>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="goals.html">Goals</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card hero-left">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            Contact
+          </div>
+
+          <h1>Let’s connect.</h1>
+          <p class="lead">
+            Use the form below. (This is a front-end form — to actually send messages,
+            you’ll connect it to Formspree, Netlify Forms, or a backend later.)
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="work.html">See my work →</a>
+            <a class="btn" href="index.html">Back home</a>
+          </div>
+        </div>
+
+        <aside class="card hero-right">
+          <div class="mini">
+            <h3>Fastest way</h3>
+            <p>Add your email / socials here later.</p>
+            <div class="meta">
+              <span class="pill">Email</span>
+              <span class="pill">Instagram</span>
+              <span class="pill">LinkedIn</span>
+            </div>
+          </div>
+
+          <div class="mini">
+            <h3>Good message</h3>
+            <p>Tell me what you need + your timeline + any details.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card form">
+          <form>
+            <div class="form-grid">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" />
+              </div>
+            </div>
+
+            <div style="height:12px"></div>
+
+            <div>
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="What’s this about?" />
+            </div>
+
+            <div style="height:12px"></div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+            </div>
+
+            <div style="height:12px"></div>
+
+            <button class="btn primary" type="button" onclick="fakeSend()">Send message</button>
+            <p class="note" id="note"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-row">
+        <div>© <span id="year"></span> Victor. All rights reserved.</div>
+        <div class="small-links">
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="goals.html">Goals</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      function fakeSend(){
+        const note = document.getElementById("note");
+        note.textContent = "✅ Message ready! (To actually send emails, connect this form to Formspree/Netlify Forms.)";
+      }
+    </script>
+  </main>
 </body>
 </html>
