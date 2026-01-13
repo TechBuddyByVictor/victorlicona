@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Victor Licona</title>
-  <meta name="description" content="About Victor Licona — background, mindset, and what I’m about." />
+  <meta name="description" content="About Victor Licona — background, mindset, and what I’m building." />
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="container">
-    <nav class="nav">
+    <nav class="nav fadeIn">
       <div class="brand">
         <strong>Victor Licona</strong>
         <span>About</span>
@@ -23,70 +23,49 @@
       </div>
     </nav>
 
-    <section class="hero">
-      <h1 class="h1">About me</h1>
-      <p class="sub">
-        I’m Victor Licona, based in Fort Worth, Texas. I’m building a career in cybersecurity while staying active in hands-on tech work,
-        media production, and leadership in my community.
-      </p>
-
-      <div class="badges">
-        <div class="badge">Cybersecurity-focused</div>
-        <div class="badge">Hands-on tech support</div>
-        <div class="badge">Media + production workflows</div>
-        <div class="badge">Leadership & service</div>
+    <section class="hero fadeIn">
+      <div class="heroInner">
+        <div class="spark"></div>
+        <h1 class="h1">About me</h1>
+        <p class="sub">
+          I’m Victor Licona from Fort Worth, TX. I’m building a future in cybersecurity while running hands-on tech work,
+          leading in church media/worship, and building TechBuddy as a professional one-person business.
+        </p>
+        <div class="tags">
+          <div class="tag">Cybersecurity</div>
+          <div class="tag">Tech support</div>
+          <div class="tag">Media production</div>
+          <div class="tag">Leadership</div>
+        </div>
       </div>
     </section>
 
-    <div class="grid">
+    <div class="grid fadeIn">
       <section class="card">
-        <h2>What drives me</h2>
+        <h2>How I operate</h2>
         <ul class="list">
-          <li class="item">
-            <strong>Build skills that compound</strong>
-            <span>Cybersecurity fundamentals + real-world troubleshooting + strong communication.</span>
-          </li>
-          <li class="item">
-            <strong>Systems over chaos</strong>
-            <span>I like clean processes, checklists, and setups that stay reliable.</span>
-          </li>
-          <li class="item">
-            <strong>Execution</strong>
-            <span>I’m big on doing the work, improving it, and making results repeatable.</span>
-          </li>
+          <li class="item"><strong>Systems > chaos</strong><span>I like structure, checklists, and workflows that don’t break under pressure.</span></li>
+          <li class="item"><strong>Execution</strong><span>I care about doing the work, improving it, and making results repeatable.</span></li>
+          <li class="item"><strong>Trust</strong><span>Whether it’s customers or a team, trust is built with clarity and consistency.</span></li>
         </ul>
       </section>
 
       <aside class="card">
         <h2>Quick facts</h2>
         <ul class="list">
-          <li class="item">
-            <strong>Location</strong>
-            <span>Fort Worth, TX</span>
-          </li>
-          <li class="item">
-            <strong>Languages</strong>
-            <span>English & Spanish</span>
-          </li>
-          <li class="item">
-            <strong>Roles</strong>
-            <span>TechBuddy founder/owner • Best Buy Apple advisor • Church media & worship leadership</span>
-          </li>
+          <li class="item"><strong>Location</strong><span>Fort Worth, TX</span></li>
+          <li class="item"><strong>Languages</strong><span>English & Spanish</span></li>
+          <li class="item"><strong>Email</strong><span><a href="mailto:contact@victorlicona.com">contact@victorlicona.com</a></span></li>
         </ul>
       </aside>
     </div>
 
-    <div class="footer">
+    <div class="footer fadeIn">
       <div>© <span id="y"></span> Victor Licona</div>
-      <div class="smalllinks">
-        <a href="./work.html">What I do</a>
-        <a href="./contact.html">Contact</a>
-      </div>
+      <div class="smalllinks"><a href="./work.html">Work</a><a href="./contact.html">Contact</a></div>
     </div>
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
