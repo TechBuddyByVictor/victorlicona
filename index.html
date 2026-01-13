@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <!-- animated background blobs -->
+  <div class="blob one"></div>
+  <div class="blob two"></div>
+  <div class="blob three"></div>
+
   <div class="container">
     <nav class="nav fadeIn">
       <div class="brand">
@@ -25,107 +30,120 @@
 
     <section class="hero fadeIn">
       <div class="heroInner">
-        <div class="spark"></div>
+        <h1 class="h1">Yo — I’m Victor 👋</h1>
+        <p class="sub">
+          Cybersecurity-focused student • Best Buy <b>Certified Apple Computing Advisor</b> •
+          Founder/Owner/Operator of <b>TechBuddy by Victor</b> (one-person company).
+        </p>
 
-        <div class="heroTop">
-          <div class="titleWrap">
-            <h1 class="h1">Building skills, systems, and businesses.</h1>
-            <p class="sub">
-              I’m Victor — a <b>cybersecurity-focused student</b>, a Best Buy <b>Certified Apple Computing Advisor</b>,
-              and the <b>founder/owner/operator</b> of <b>TechBuddy by Victor</b> (one-person company).
-            </p>
+        <div class="chips">
+          <div class="chip">Cybersecurity (TCC → certs)</div>
+          <div class="chip">Tech support & troubleshooting</div>
+          <div class="chip">Media + livestream production</div>
+          <div class="chip">Bilingual (EN/ES)</div>
+        </div>
 
-            <div class="tags">
-              <div class="tag">Cybersecurity path (TCC → certifications)</div>
-              <div class="tag">Tech support & troubleshooting</div>
-              <div class="tag">Media + livestream production</div>
-              <div class="tag">Bilingual (EN/ES)</div>
-            </div>
-
-            <div class="btnRow">
-              <a class="btn primary" href="./work.html">Explore my work</a>
-              <a class="btn green" href="mailto:contact@victorlicona.com">Email: contact@victorlicona.com</a>
-              <a class="btn" href="sms:+12142706884">Text: (214) 270-6884</a>
-              <a class="btn" href="./contact.html">Contact page</a>
-            </div>
-          </div>
-
-          <div class="cta">
-            <a class="btn" href="#" title="Replace # with your LinkedIn URL">LinkedIn (placeholder)</a>
-            <a class="btn" href="#" title="Replace # with your Instagram URL">Instagram (placeholder)</a>
-            <a class="btn" href="tel:+12142706884">Call: (214) 270-6884</a>
-          </div>
+        <div class="btnRow">
+          <a class="btn primary glow" href="./work.html">See what I do</a>
+          <a class="btn secondary glow" href="mailto:contact@victorlicona.com">Email me</a>
+          <a class="btn glow" href="sms:+12142706884">Text: (214) 270-6884</a>
+          <button class="btn glow" id="partyBtn" type="button">Make it fun 🎉</button>
         </div>
       </div>
     </section>
 
     <div class="grid fadeIn">
       <section class="card">
-        <h2>Top strengths</h2>
+        <h2>Top 3 skills</h2>
         <ul class="list">
           <li class="item">
             <strong>Technical troubleshooting & systems thinking</strong>
-            <span>Root-cause mindset + repeatable fixes. I build setups that stay reliable.</span>
+            <span>Fast diagnosis, root-cause mindset, and repeatable fixes that stay reliable.</span>
           </li>
           <li class="item">
             <strong>Clear communication & customer trust (EN/ES)</strong>
-            <span>I explain tech in plain language and keep people confident through the process.</span>
+            <span>I explain tech in plain language and keep people confident.</span>
           </li>
           <li class="item">
             <strong>Security-minded problem solving</strong>
-            <span>Cybersecurity mindset: safer defaults, scam awareness, privacy-first habits.</span>
+            <span>Safer setups, scam awareness, privacy-first habits, and smart defaults.</span>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="card">
+        <h2>Quick links</h2>
+        <ul class="list">
+          <li class="item">
+            <strong>Contact</strong>
+            <span>
+              <a href="mailto:contact@victorlicona.com">contact@victorlicona.com</a><br/>
+              <a href="tel:+12142706884">(214) 270-6884</a> • <a href="sms:+12142706884">Text</a>
+            </span>
+          </li>
+          <li class="item">
+            <strong>Social</strong>
+            <span>
+              <a href="#" title="Replace with your LinkedIn URL">LinkedIn (placeholder)</a><br/>
+              <a href="#" title="Replace with your Instagram URL">Instagram (placeholder)</a>
+            </span>
           </li>
         </ul>
 
         <hr class="hr"/>
 
-        <div class="twoCol">
-          <div class="kpi">
-            <div class="k">Best Buy</div>
-            <div class="v">Certified Apple Computing Advisor</div>
-          </div>
-          <div class="kpi">
-            <div class="k">Business</div>
-            <div class="v">TechBuddy by Victor (Founder)</div>
-          </div>
-        </div>
-      </section>
-
-      <aside class="card">
-        <h2>Snapshot</h2>
-        <ul class="list">
-          <li class="item">
-            <strong>What I’m working on</strong>
-            <span>Cybersecurity skills, TechBuddy growth, and reliable media workflows.</span>
-          </li>
-          <li class="item">
-            <strong>What I’m open to</strong>
-            <span>Collaborations, paid work, and opportunities that build real experience.</span>
-          </li>
-          <li class="item">
-            <strong>Fast contact</strong>
-            <span>
-              <a href="mailto:contact@victorlicona.com">contact@victorlicona.com</a><br/>
-              <a href="sms:+12142706884">Text (214) 270-6884</a>
-            </span>
-          </li>
-        </ul>
+        <p class="p">
+          This is my personal “LinkedIn but better” — colorful, real, and easy to contact me.
+        </p>
       </aside>
     </div>
 
     <div class="footer fadeIn">
       <div>© <span id="y"></span> Victor Licona</div>
-      <div class="smalllinks">
-        <a href="./about.html">About</a>
-        <a href="./work.html">Work</a>
-        <a href="./goals.html">Goals</a>
+      <div>
+        <a href="./about.html">About</a> ·
+        <a href="./work.html">Work</a> ·
+        <a href="./goals.html">Goals</a> ·
         <a href="./contact.html">Contact</a>
       </div>
     </div>
   </div>
 
+  <div class="confetti" id="confetti"></div>
+
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Confetti 🎉
+    const btn = document.getElementById("partyBtn");
+    const confetti = document.getElementById("confetti");
+
+    function rand(min, max){ return Math.floor(Math.random()*(max-min+1))+min; }
+    function color(){
+      const c = ["#ff3d8d","#7c3aed","#06b6d4","#22c55e","#f59e0b","#ffffff"];
+      return c[rand(0,c.length-1)];
+    }
+
+    btn.addEventListener("click", () => {
+      confetti.innerHTML = "";
+      const count = 70;
+
+      for(let i=0;i<count;i++){
+        const p = document.createElement("i");
+        p.style.left = rand(5,95) + "vw";
+        p.style.top  = rand(10,40) + "vh";
+        p.style.background = color();
+
+        p.style.setProperty("--x0","0px");
+        p.style.setProperty("--y0","0px");
+        p.style.setProperty("--x1", rand(-180,180) + "px");
+        p.style.setProperty("--y1", rand(220,520) + "px");
+        p.style.animationDelay = rand(0,120) + "ms";
+
+        confetti.appendChild(p);
+      }
+      setTimeout(()=> confetti.innerHTML="", 1100);
+    });
   </script>
 </body>
 </html>
