@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Victor Licona</title>
+  <meta name="description" content="Contact Victor Licona." />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <strong>Victor Licona</strong>
+        <span>Contact</span>
+      </div>
+      <div class="links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./work.html">Work</a>
+        <a href="./goals.html">Goals</a>
+        <a class="active" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1 class="h1">Contact</h1>
+      <p class="sub">
+        Email or text is the fastest way to reach me.
+      </p>
+
+      <div class="btnrow">
+        <a class="btn green" href="mailto:contact@victorlicona.com">contact@victorlicona.com</a>
+        <a class="btn" href="tel:+12142706884">Call: (214) 270-6884</a>
+        <a class="btn primary" href="sms:+12142706884">Text me</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>What to include in your message</h2>
+      <ul class="list">
+        <li class="item"><strong>Who you are</strong><span>Name + best way to contact you back</span></li>
+        <li class="item"><strong>What you need</strong><span>Short summary (problem / opportunity / collaboration)</span></li>
+        <li class="item"><strong>Timeline</strong><span>When you need it</span></li>
+      </ul>
+      <p class="muted" style="margin-top:12px;">
+        If you’re reaching out about TechBuddy services, include the device type and the issue you’re seeing.
+      </p>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Victor Licona</div>
+      <div><a href="./index.html">Home</a></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
