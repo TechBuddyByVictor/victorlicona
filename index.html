@@ -3,147 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victor Licona</title>
-  <meta name="description" content="Victor Licona — cybersecurity-focused student, Best Buy Certified Apple Computing Advisor, founder of TechBuddy by Victor." />
-  <link rel="stylesheet" href="./styles.css">
+  <title>Victor | Personal Website</title>
+  <link rel="stylesheet" href="Styles.css" />
 </head>
 <body>
-  <!-- animated background blobs -->
-  <div class="blob one"></div>
-  <div class="blob two"></div>
-  <div class="blob three"></div>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <div class="container">
-    <nav class="nav fadeIn">
-      <div class="brand">
-        <strong>Victor Licona</strong>
-        <span>Personal website • Fort Worth, TX</span>
-      </div>
-      <div class="links">
-        <a class="active" href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./work.html">Work</a>
-        <a href="./goals.html">Goals</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-    </nav>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Victor</span>
+      </a>
 
-    <section class="hero fadeIn">
-      <div class="heroInner">
-        <h1 class="h1">Yo — I’m Victor 👋</h1>
-        <p class="sub">
-          Cybersecurity-focused student • Best Buy <b>Certified Apple Computing Advisor</b> •
-          Founder/Owner/Operator of <b>TechBuddy by Victor</b> (one-person company).
-        </p>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="goals.html">Goals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <div class="chips">
-          <div class="chip">Cybersecurity (TCC → certs)</div>
-          <div class="chip">Tech support & troubleshooting</div>
-          <div class="chip">Media + livestream production</div>
-          <div class="chip">Bilingual (EN/ES)</div>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card hero-left">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            Building skills. Building projects. Building my future.
+          </div>
+
+          <h1>Hi, I’m Victor — a student learning tech and building real-world projects.</h1>
+          <p class="lead">
+            This is my personal site where I share what I’m working on, what I’m learning,
+            and what goals I’m chasing. I like clean systems, useful tools, and getting better every week.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="work.html">See my work →</a>
+            <a class="btn" href="about.html">About me</a>
+            <a class="btn ghost" href="contact.html">Contact</a>
+          </div>
+
+          <div class="badges" aria-label="Highlights">
+            <span class="badge">Cybersecurity</span>
+            <span class="badge">Tech Support</span>
+            <span class="badge">Web Projects</span>
+            <span class="badge">Learning & Growth</span>
+          </div>
         </div>
 
-        <div class="btnRow">
-          <a class="btn primary glow" href="./work.html">See what I do</a>
-          <a class="btn secondary glow" href="mailto:contact@victorlicona.com">Email me</a>
-          <a class="btn glow" href="sms:+12142706884">Text: (214) 270-6884</a>
-          <button class="btn glow" id="partyBtn" type="button">Make it fun 🎉</button>
+        <aside class="card hero-right" aria-label="Quick info">
+          <div class="mini">
+            <h3>Currently focused on</h3>
+            <p>Cybersecurity fundamentals + building projects I can show.</p>
+            <div class="meta">
+              <span class="pill">Networking</span>
+              <span class="pill">Linux</span>
+              <span class="pill">Web</span>
+            </div>
+          </div>
+
+          <div class="mini">
+            <h3>What I’m aiming for</h3>
+            <p>Strong portfolio + consistent progress every week.</p>
+            <div class="meta">
+              <span class="pill">Portfolio</span>
+              <span class="pill">Certs</span>
+              <span class="pill">Discipline</span>
+            </div>
+          </div>
+
+          <div class="mini">
+            <h3>Quick links</h3>
+            <p>
+              Check out my <a href="work.html"><strong>projects</strong></a> and my <a href="goals.html"><strong>goals</strong></a>.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>What you’ll find here</h2>
+          <p>Simple, clean, and updated as I grow.</p>
+        </div>
+
+        <div class="grid">
+          <div class="feature">
+            <h3>About</h3>
+            <p>Who I am, what I’m learning, and the story behind my goals.</p>
+          </div>
+          <div class="feature">
+            <h3>Work</h3>
+            <p>Projects, experiments, and anything I’m proud to ship.</p>
+          </div>
+          <div class="feature">
+            <h3>Goals</h3>
+            <p>Clear targets and habits I’m building toward long-term success.</p>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="split">
+          <div class="card list">
+            <h3>Skills I’m building</h3>
+            <ul class="ul">
+              <li>Cybersecurity basics (networking, best practices, threat awareness)</li>
+              <li>Web foundations (HTML/CSS + clean layouts)</li>
+              <li>Problem-solving and real-world troubleshooting</li>
+              <li>Consistency: showing up and improving weekly</li>
+            </ul>
+          </div>
+
+          <div class="card list">
+            <h3>What I value</h3>
+            <ul class="ul">
+              <li>Doing the work even when motivation is low</li>
+              <li>Building things people can actually use</li>
+              <li>Learning fast and staying humble</li>
+              <li>Keeping it simple, clean, and effective</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="grid fadeIn">
-      <section class="card">
-        <h2>Top 3 skills</h2>
-        <ul class="list">
-          <li class="item">
-            <strong>Technical troubleshooting & systems thinking</strong>
-            <span>Fast diagnosis, root-cause mindset, and repeatable fixes that stay reliable.</span>
-          </li>
-          <li class="item">
-            <strong>Clear communication & customer trust (EN/ES)</strong>
-            <span>I explain tech in plain language and keep people confident.</span>
-          </li>
-          <li class="item">
-            <strong>Security-minded problem solving</strong>
-            <span>Safer setups, scam awareness, privacy-first habits, and smart defaults.</span>
-          </li>
-        </ul>
-      </section>
-
-      <aside class="card">
-        <h2>Quick links</h2>
-        <ul class="list">
-          <li class="item">
-            <strong>Contact</strong>
-            <span>
-              <a href="mailto:contact@victorlicona.com">contact@victorlicona.com</a><br/>
-              <a href="tel:+12142706884">(214) 270-6884</a> • <a href="sms:+12142706884">Text</a>
-            </span>
-          </li>
-          <li class="item">
-            <strong>Social</strong>
-            <span>
-              <a href="#" title="Replace with your LinkedIn URL">LinkedIn (placeholder)</a><br/>
-              <a href="#" title="Replace with your Instagram URL">Instagram (placeholder)</a>
-            </span>
-          </li>
-        </ul>
-
-        <hr class="hr"/>
-
-        <p class="p">
-          This is my personal “LinkedIn but better” — colorful, real, and easy to contact me.
-        </p>
-      </aside>
-    </div>
-
-    <div class="footer fadeIn">
-      <div>© <span id="y"></span> Victor Licona</div>
-      <div>
-        <a href="./about.html">About</a> ·
-        <a href="./work.html">Work</a> ·
-        <a href="./goals.html">Goals</a> ·
-        <a href="./contact.html">Contact</a>
+    <footer>
+      <div class="container footer-row">
+        <div>© <span id="year"></span> Victor. All rights reserved.</div>
+        <div class="small-links">
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="goals.html">Goals</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <div class="confetti" id="confetti"></div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    // Confetti 🎉
-    const btn = document.getElementById("partyBtn");
-    const confetti = document.getElementById("confetti");
-
-    function rand(min, max){ return Math.floor(Math.random()*(max-min+1))+min; }
-    function color(){
-      const c = ["#ff3d8d","#7c3aed","#06b6d4","#22c55e","#f59e0b","#ffffff"];
-      return c[rand(0,c.length-1)];
-    }
-
-    btn.addEventListener("click", () => {
-      confetti.innerHTML = "";
-      const count = 70;
-
-      for(let i=0;i<count;i++){
-        const p = document.createElement("i");
-        p.style.left = rand(5,95) + "vw";
-        p.style.top  = rand(10,40) + "vh";
-        p.style.background = color();
-
-        p.style.setProperty("--x0","0px");
-        p.style.setProperty("--y0","0px");
-        p.style.setProperty("--x1", rand(-180,180) + "px");
-        p.style.setProperty("--y1", rand(220,520) + "px");
-        p.style.animationDelay = rand(0,120) + "ms";
-
-        confetti.appendChild(p);
-      }
-      setTimeout(()=> confetti.innerHTML="", 1100);
-    });
-  </script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </main>
 </body>
 </html>
