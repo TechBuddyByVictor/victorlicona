@@ -3,89 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work — Victor Licona</title>
-  <meta name="description" content="Victor Licona — roles, business, and what I do." />
-  <link rel="stylesheet" href="./styles.css">
+  <title>Work | Victor</title>
+  <link rel="stylesheet" href="Styles.css" />
 </head>
 <body>
-  <div class="container">
-    <nav class="nav fadeIn">
-      <div class="brand"><strong>Victor Licona</strong><span>Work</span></div>
-      <div class="links">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a class="active" href="./work.html">Work</a>
-        <a href="./goals.html">Goals</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <section class="hero fadeIn">
-      <div class="heroInner">
-        <div class="spark"></div>
-        <h1 class="h1">Work & roles</h1>
-        <p class="sub">A clear breakdown of what I do across business, work, and community leadership.</p>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Victor</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="work.html">Work</a>
+        <a href="goals.html">Goals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card hero-left">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            Work & Projects
+          </div>
+
+          <h1>Projects I’m building and improving.</h1>
+          <p class="lead">
+            Here’s where I post what I’m working on. If you want, tell me your real projects
+            and I’ll format them cleanly here.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="contact.html">Work with me →</a>
+            <a class="btn" href="index.html">Back home</a>
+          </div>
+        </div>
+
+        <aside class="card hero-right">
+          <div class="mini">
+            <h3>How I build</h3>
+            <p>Simple, clean, and usable. Then iterate and improve.</p>
+            <div class="meta">
+              <span class="pill">Ship</span>
+              <span class="pill">Improve</span>
+              <span class="pill">Repeat</span>
+            </div>
+          </div>
+
+          <div class="mini">
+            <h3>Tip</h3>
+            <p>Replace the placeholder projects below with your real ones.</p>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="card fadeIn">
-      <h2>Business</h2>
-      <ul class="list">
-        <li class="item">
-          <strong>TechBuddy by Victor — Founder / Owner / Operator</strong>
-          <span>
-            One-person tech support company serving seniors, families, and small businesses. I handle everything:
-            client communication, troubleshooting, setups, and building systems that feel professional and safe.
-          </span>
-        </li>
-      </ul>
-      <div class="btnRow">
-        <a class="btn primary" href="mailto:contact@victorlicona.com">Work with me</a>
-        <a class="btn" href="#" title="Add your TechBuddy site link if you want">TechBuddy link (optional)</a>
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured</h2>
+          <p>Placeholders — swap these with your real work.</p>
+        </div>
+
+        <div class="work-cards">
+          <article class="project">
+            <div class="top">
+              <h3>Personal Website</h3>
+              <span class="pill">HTML/CSS</span>
+            </div>
+            <p>A clean multi-page website with a modern design system and shared styling.</p>
+            <div class="tagrow">
+              <span class="tag">Responsive</span>
+              <span class="tag">Modern UI</span>
+              <span class="tag">Reusable CSS</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Cybersecurity Notes Hub</h3>
+              <span class="pill">Learning</span>
+            </div>
+            <p>Organized notes + labs I complete while building fundamentals in security.</p>
+            <div class="tagrow">
+              <span class="tag">Networking</span>
+              <span class="tag">Threats</span>
+              <span class="tag">Best Practices</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Troubleshooting Playbook</h3>
+              <span class="pill">Systems</span>
+            </div>
+            <p>A step-by-step checklist to diagnose common device, Wi-Fi, and software issues.</p>
+            <div class="tagrow">
+              <span class="tag">Checklists</span>
+              <span class="tag">Real-World</span>
+              <span class="tag">Fast Fixes</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="top">
+              <h3>Future Project Slot</h3>
+              <span class="pill">Coming soon</span>
+            </div>
+            <p>Add your next big project here (app, tool, portfolio piece, anything).</p>
+            <div class="tagrow">
+              <span class="tag">Placeholder</span>
+              <span class="tag">Add Details</span>
+              <span class="tag">Link Later</span>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <div class="grid fadeIn">
-      <section class="card">
-        <h2>Professional</h2>
-        <ul class="list">
-          <li class="item">
-            <strong>Best Buy — Certified Apple Computing Advisor</strong>
-            <span>Apple-focused advising + customer solutions. Strong emphasis on clarity, trust, and correct setups.</span>
-          </li>
-        </ul>
+    <footer>
+      <div class="container footer-row">
+        <div>© <span id="year"></span> Victor. All rights reserved.</div>
+        <div class="small-links">
+          <a href="goals.html">Goals</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
 
-        <hr class="hr"/>
-
-        <h2>Community & leadership</h2>
-        <ul class="list">
-          <li class="item"><strong>Church media & livestream</strong><span>Cameras, audio, overlays, and reliable service execution.</span></li>
-          <li class="item"><strong>Worship leadership</strong><span>Planning and leading worship in a Spanish-speaking Pentecostal church context.</span></li>
-          <li class="item"><strong>Church treasurer responsibilities</strong><span>Helping manage finances and keep systems clean and accountable.</span></li>
-        </ul>
-      </section>
-
-      <aside class="card">
-        <h2>Social</h2>
-        <ul class="list">
-          <li class="item"><strong>LinkedIn</strong><span><a href="#" title="Replace with your LinkedIn URL">Placeholder link</a></span></li>
-          <li class="item"><strong>Instagram</strong><span><a href="#" title="Replace with your Instagram URL">Placeholder link</a></span></li>
-        </ul>
-        <hr class="hr"/>
-        <h2>Contact</h2>
-        <ul class="list">
-          <li class="item"><strong>Email</strong><span><a href="mailto:contact@victorlicona.com">contact@victorlicona.com</a></span></li>
-          <li class="item"><strong>Text</strong><span><a href="sms:+12142706884">(214) 270-6884</a></span></li>
-        </ul>
-      </aside>
-    </div>
-
-    <div class="footer fadeIn">
-      <div>© <span id="y"></span> Victor Licona</div>
-      <div class="smalllinks"><a href="./goals.html">Goals</a><a href="./contact.html">Contact</a></div>
-    </div>
-  </div>
-
-  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </main>
 </body>
 </html>
