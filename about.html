@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Victor Licona</title>
+  <meta name="description" content="About Victor Licona — background, interests, and what I’m about." />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <strong>Victor Licona</strong>
+        <span>About me</span>
+      </div>
+      <div class="links">
+        <a href="./index.html">Home</a>
+        <a class="active" href="./about.html">About</a>
+        <a href="./work.html">Work</a>
+        <a href="./goals.html">Goals</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1 class="h1">About me</h1>
+      <p class="sub">
+        I’m Victor Licona, based in Fort Worth, Texas. I’m a student building a career in cybersecurity while staying active in tech, media, and business.
+        I like things that are real, practical, and measurable—systems, troubleshooting, building processes, and getting results.
+      </p>
+
+      <div class="badges">
+        <div class="badge">Student</div>
+        <div class="badge">Cybersecurity</div>
+        <div class="badge">Tech support</div>
+        <div class="badge">Media production</div>
+        <div class="badge">Entrepreneurship</div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>How I think</h2>
+        <ul class="list">
+          <li class="item">
+            <strong>Build skills that compound</strong>
+            <span>Cybersecurity fundamentals + real-world problem solving + communication.</span>
+          </li>
+          <li class="item">
+            <strong>Systems over chaos</strong>
+            <span>I prefer clean processes, checklists, and repeatable workflows.</span>
+          </li>
+          <li class="item">
+            <strong>Execution matters</strong>
+            <span>Ideas are cool, but shipping and improving is the real flex.</span>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="card">
+        <h2>Facts about me</h2>
+        <ul class="list">
+          <li class="item">
+            <strong>Location</strong>
+            <span>Fort Worth, TX</span>
+          </li>
+          <li class="item">
+            <strong>Languages</strong>
+            <span>English & Spanish</span>
+          </li>
+          <li class="item">
+            <strong>Interests</strong>
+            <span>Cybersecurity, business, media production, tech troubleshooting, fitness</span>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Victor Licona</div>
+      <div><a href="./contact.html">Contact</a></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
