@@ -3,69 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Victor Licona</title>
-  <meta name="description" content="About Victor Licona — background, mindset, and what I’m building." />
-  <link rel="stylesheet" href="./styles.css">
+  <title>About | Victor</title>
+  <link rel="stylesheet" href="Styles.css" />
 </head>
 <body>
-  <div class="container">
-    <nav class="nav fadeIn">
-      <div class="brand">
-        <strong>Victor Licona</strong>
-        <span>About</span>
-      </div>
-      <div class="links">
-        <a href="./index.html">Home</a>
-        <a class="active" href="./about.html">About</a>
-        <a href="./work.html">Work</a>
-        <a href="./goals.html">Goals</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <section class="hero fadeIn">
-      <div class="heroInner">
-        <div class="spark"></div>
-        <h1 class="h1">About me</h1>
-        <p class="sub">
-          I’m Victor Licona from Fort Worth, TX. I’m building a future in cybersecurity while running hands-on tech work,
-          leading in church media/worship, and building TechBuddy as a professional one-person business.
-        </p>
-        <div class="tags">
-          <div class="tag">Cybersecurity</div>
-          <div class="tag">Tech support</div>
-          <div class="tag">Media production</div>
-          <div class="tag">Leadership</div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Victor</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="goals.html">Goals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card hero-left">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            About me
+          </div>
+
+          <h1>I’m building a future in tech — one project at a time.</h1>
+          <p class="lead">
+            I’m a student who likes learning by doing. I’m focused on cybersecurity, practical problem-solving,
+            and building a portfolio that proves I can ship.
+          </p>
+
+          <div class="badges">
+            <span class="badge">Student</span>
+            <span class="badge">Cybersecurity Path</span>
+            <span class="badge">Hands-on Learning</span>
+          </div>
+        </div>
+
+        <aside class="card hero-right">
+          <div class="mini">
+            <h3>Strengths</h3>
+            <p>Consistency, curiosity, and learning fast from real work.</p>
+            <div class="meta">
+              <span class="pill">Focus</span>
+              <span class="pill">Growth</span>
+              <span class="pill">Discipline</span>
+            </div>
+          </div>
+
+          <div class="mini">
+            <h3>What I’m working on</h3>
+            <p>Turning skills into projects and building a clean online presence.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card list">
+          <h3>My story (short version)</h3>
+          <ul class="ul">
+            <li>I’m building skills in cybersecurity and tech.</li>
+            <li>I prefer learning with real tasks, not just theory.</li>
+            <li>I’m building a portfolio so opportunities come to me.</li>
+            <li>I’m focused on long-term progress, not quick hype.</li>
+          </ul>
+        </div>
+
+        <div class="card list">
+          <h3>What I want next</h3>
+          <ul class="ul">
+            <li>More projects I can show on this site</li>
+            <li>More confidence with networking + security tools</li>
+            <li>Clear goals and measurable progress</li>
+            <li>Professional experience + certifications</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <div class="grid fadeIn">
-      <section class="card">
-        <h2>How I operate</h2>
-        <ul class="list">
-          <li class="item"><strong>Systems > chaos</strong><span>I like structure, checklists, and workflows that don’t break under pressure.</span></li>
-          <li class="item"><strong>Execution</strong><span>I care about doing the work, improving it, and making results repeatable.</span></li>
-          <li class="item"><strong>Trust</strong><span>Whether it’s customers or a team, trust is built with clarity and consistency.</span></li>
-        </ul>
-      </section>
+    <footer>
+      <div class="container footer-row">
+        <div>© <span id="year"></span> Victor. All rights reserved.</div>
+        <div class="small-links">
+          <a href="work.html">See Work</a>
+          <a href="goals.html">Goals</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
 
-      <aside class="card">
-        <h2>Quick facts</h2>
-        <ul class="list">
-          <li class="item"><strong>Location</strong><span>Fort Worth, TX</span></li>
-          <li class="item"><strong>Languages</strong><span>English & Spanish</span></li>
-          <li class="item"><strong>Email</strong><span><a href="mailto:contact@victorlicona.com">contact@victorlicona.com</a></span></li>
-        </ul>
-      </aside>
-    </div>
-
-    <div class="footer fadeIn">
-      <div>© <span id="y"></span> Victor Licona</div>
-      <div class="smalllinks"><a href="./work.html">Work</a><a href="./contact.html">Contact</a></div>
-    </div>
-  </div>
-
-  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </main>
 </body>
 </html>
